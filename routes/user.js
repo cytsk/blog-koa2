@@ -2,7 +2,7 @@ const router = require('koa-router')()
 
 router.prefix('/user')
 
-router.get('/', function (ctx, next) {
+router.post('/login', async function (ctx, next) {
   ctx.body = 'this is a users response!'
 })
 
